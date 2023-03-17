@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +17,13 @@
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="css/checkout.css">
   <link rel="stylesheet" href="css/categories.css">
+  <link rel="stylesheet" href="css/proddetails.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
   <ul class="menu">
     <li><a href="#!/view1">view1</a></li>
@@ -29,59 +34,59 @@
 
 
 
-   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top mb-pd bbb">
-     <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top mb-pd bbb">
+    <div class="container">
 
-       <button class="navbar-toggler btn" data-toggle="collapse" data-target="#mynav">
-         <span class="navbar-toggler-icon">
-           <img src="icons/menu.svg" alt="">
-         </span>
-       </button>
-       <div class="collapse navbar-collapse" id="mynav">
-         <ul class="navbar-nav mr-auto">
+      <button class="navbar-toggler btn" data-toggle="collapse" data-target="#mynav">
+        <span class="navbar-toggler-icon">
+          <img src="icons/menu.svg" alt="">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav mr-auto">
 
-           <li class="nav-item">
-             <div class="dropdown open">
-               <button class="nav-link dropdown-toggle text-darklink-res dp-link" type="button" id="triggerId"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANDS</button>
-               <div class="dropdown-menu" aria-labelledby="triggerId">
-                 <button class="dropdown-item" href="#">Shirt</button>
-                 <button class="dropdown-item" href="#">Trousers</button>
-                 <button class="dropdown-item" href="#">Torso</button>
-                 <button class="dropdown-item" href="#">Suits</button>
-               </div>
-             </div>
-           </li>
+          <li class="nav-item">
+            <div class="dropdown open">
+              <button class="nav-link dropdown-toggle text-darklink-res dp-link" type="button" id="triggerId"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANDS</button>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <button class="dropdown-item" href="#">Shirt</button>
+                <button class="dropdown-item" href="#">Trousers</button>
+                <button class="dropdown-item" href="#">Torso</button>
+                <button class="dropdown-item" href="#">Suits</button>
+              </div>
+            </div>
+          </li>
 
-           <li class="nav-item"><a href="#!/view2" class="nav-link text-dark ml-1 liv l-b-b">PRODUCTS</a>
-           </li>
-           <li class="nav-item"><a href="#!/view4" class="nav-link text-dark ml-1 liv">CATEGORIES</a></li>
-           <li class="nav-item"><a href="#!/view3" class="nav-link text-dark liv">CONTACT</a></li>
-         </ul>
-       </div>
+          <li class="nav-item"><a href="#!/view2" class="nav-link text-dark ml-1 liv l-b-b">PRODUCTS</a>
+          </li>
+          <li class="nav-item"><a href="#!/view4" class="nav-link text-dark ml-1 liv">CATEGORIES</a></li>
+          <li class="nav-item"><a href="#!/view3" class="nav-link text-dark liv">CONTACT</a></li>
+        </ul>
+      </div>
 
-       <a href="#!/view1" class="navbar-brand text-white lg-s">
-         <span><img class="" src="icons/logo.svg" alt="" width="200px" height="90px"></span>
-       </a>
+      <a href="#!/view1" class="navbar-brand text-white lg-s">
+        <span><img class="" src="icons/logo.svg" alt="" width="200px" height="90px"></span>
+      </a>
 
-       <div class="collapse navbar-collapse flex-icons" id="mynav">
-         <ul class="navbar-nav">
-           <li class="nav-item"><a href="#!/view5" class="nav-link ride shift-logo ml-2 link-res"> <img
-                 src="icons/cart.svg" alt=""> </a></li>
-           <li class="nav-item"><a href="#!/view7" class="nav-link ml-2 link-res"> <img src="icons/wish.svg"
-                 alt=""> </a></li>
-           <li class="nav-item"><a href="" class="nav-link ml-2 link-res"> <img src="icons/search.svg" alt="">
-             </a></li>
-           <li class="nav-item"><a href="" class="nav-link ml-2 link-res"> <img src="icons/user.svg" alt=""> </a>
-           </li>
-         </ul>
-       </div>
-
-
+      <div class="collapse navbar-collapse flex-icons" id="mynav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#!/view5" class="nav-link ride shift-logo ml-2 link-res"> <img
+                src="icons/cart.svg" alt=""> </a></li>
+          <li class="nav-item"><a href="#!/view7" class="nav-link ml-2 link-res"> <img src="icons/wish.svg" alt=""> </a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link ml-2 link-res"> <img src="icons/search.svg" alt="">
+            </a></li>
+          <li class="nav-item"><a href="" class="nav-link ml-2 link-res"> <img src="icons/user.svg" alt=""> </a>
+          </li>
+        </ul>
+      </div>
 
 
-     </div>
-   </nav>
+
+
+    </div>
+  </nav>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -104,41 +109,43 @@
   <script src="views/categories/view4.js"></script>
   <script src="views/cart/view5.js"></script>
   <script src="views/checkout/view6.js"></script>
-    <script src="views/wishlist/view7.js"></script>
+  <script src="views/wishlist/view7.js"></script>
+  <script src="views/product_detail/view8.js"></script>
 
-   <!-- Jquery -->
-   <script src="js/jquery.js"></script>
-   <!--  Popper js -->
-   <script src="js/popper.js"></script>
-   <!-- bootstrap library -->
-   <script src="js/bootstrap.min.js"></script>
+  <!-- Jquery -->
+  <script src="js/jquery.js"></script>
+  <!--  Popper js -->
+  <script src="js/popper.js"></script>
+  <!-- bootstrap library -->
+  <script src="js/bootstrap.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-      
-    </script>
-    <script>
-      var typed = new Typed(".auto-input1", {
-        strings: ["Distinct", ],
-        typeSpeed: 70,
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+
+  </script>
+  <script>
+    var typed = new Typed(".auto-input1", {
+      strings: ["Distinct", ],
+      typeSpeed: 70,
+      backSpeed: 80,
+      loop: false
+    })
+
+    setTimeout(() => {
+      var typed2 = new Typed(".auto-input2", {
+        strings: ["Yourself"],
+        typeSpeed: 80,
         backSpeed: 80,
         loop: false
       })
+    }, 1900);
+  </script>
 
-      setTimeout(() => {
-        var typed2 = new Typed(".auto-input2", {
-          strings: ["Yourself"],
-          typeSpeed: 80,
-          backSpeed: 80,
-          loop: false
-        })
-      }, 1900);
-    </script>
-
-    <!-- Main javascript file -->
-    <script src="js/script.js"></script>
+  <!-- Main javascript file -->
+  <script src="js/script.js"></script>
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
 </body>
+
 </html>
