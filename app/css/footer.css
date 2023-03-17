@@ -1,0 +1,43 @@
+/*Footer styling*/
+/* The body default style */
+/* body{
+    font-family: 'Montserrat', sans-serif;
+} */
+.my-h2{
+    font-weight: bold;
+    font-size: 27.5px;
+}
+.footer-p{
+    font-size:16px;
+    color:#808080;
+}
+footer a{
+    text-decoration: none;
+    color: #808080;
+    transition: 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+}
+.footer-header{
+    font-size: 17px;
+    font-weight: bold;
+}
+.footer li{
+    font-size: 16px;
+}
+footer a:hover{
+    text-decoration: line-through ;
+    margin-left: 5px;
+    color:#585656;
+    font-weight: 500;
+}
+/* .ml-center{
+    margin-left: 50%;
+} */
+footer ul{
+    list-style: none;
+} 
+.ml-far{
+    margin-left: 10%;
+}

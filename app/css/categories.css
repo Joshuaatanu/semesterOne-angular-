@@ -1,0 +1,109 @@
+.intro ul{
+    display: flex;
+}
+.intro ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+.intro ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* CHISOM'S CODE!!!! */
+
+  .wrapper .title{
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .main-wrapper{
+    display: flex;
+    margin: 30px;
+  }
+  .wrapper{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+  .wrapper .image1 img{
+    width: 206px;
+    height: 335px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .wrapper .image2 img{
+    width: 235px;
+    height: 356px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .wrapper .image3 img{
+    width: 259px;
+    height: 389px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .wrapper .image4 img{
+    width: 271px;
+    height: 369px;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .wrapper .content3{
+    color: white;
+    width: 70%;
+    padding: 40px;
+    align: center;
+    height: 390px;
+    padding-top: 30px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .wrapper .content2{
+    color: white;
+    width: 70%;
+    padding: 40px;
+    align: center;
+    height: 356px;
+    padding-top: 30px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .wrapper .content1{
+    color: white;
+    width: 60%;
+    padding: 40px;
+    align: center;
+    padding-top: 30px;
+    height: 335px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .wrapper .content4{
+    color: white;
+    width: 60%;
+    padding: 40px;
+    align: center;
+    padding-top: 30px;
+    height: 369px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .content1{
+    background-color: #584739;
+  }
+  .content2{
+    background-color: #1c3833;
+  }
+  .content3{
+    background-color: #ab6c45;
+  }
+  .content4{
+    background-color: #253c55;
+  }
+  .letsgo{
+    padding-top: 10px;
+    font-weight: 700;
+  }
+  .wrapper p{
+    font-size: 10px
+  }
+
+
+  @media screen and (max-width:720px) {
+    .main-wrapper{
+      display: block;
+    }
+  }
