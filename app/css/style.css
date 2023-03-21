@@ -760,3 +760,16 @@ float: right
 
 
 
+#ticker {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }

@@ -34,6 +34,7 @@
 
 
 
+
   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top mb-pd bbb">
     <div class="container">
 
@@ -47,14 +48,11 @@
 
           <li class="nav-item">
             <div class="dropdown open">
-              <button class="nav-link dropdown-toggle text-darklink-res dp-link" type="button" id="triggerId"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANDS</button>
-              <div class="dropdown-menu" aria-labelledby="triggerId">
-                <button class="dropdown-item" href="#">Shirt</button>
-                <button class="dropdown-item" href="#">Trousers</button>
-                <button class="dropdown-item" href="#">Torso</button>
-                <button class="dropdown-item" href="#">Suits</button>
-              </div>
+              <button class="nav-link  text-darklink-res dp-link" type="button" id="triggerId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <p>Visitors: <span id="visitor-count">0</span></p>
+              </button>
+             
             </div>
           </li>
 
@@ -119,80 +117,132 @@
   <script src="views/details_view/green_shirt/view12.js"></script>
 
 
+  <div id="ticker" onclick=" getLocation()"></div>
+  <!-- <p>You are visitor number <span id="counter"></span> to this page.</p> -->
 
+ 
+
+
+  <script src="js/counter.js"></script>
+  <script>
+    function tick() {
+      var ticker = document.getElementById("ticker");
+      var now = new Date();
+      var location = "Your Location";
+      var datetime = now.toLocaleString();
+      ticker.innerHTML = location + " | " + datetime;
+      ticker.style.animationDuration = ((ticker.offsetWidth + window.innerWidth) / 100) + "s";
+    }
+    tick();
+    setInterval(tick, 1000);
+
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      alert("Your current location is: " + latitude + ", " + longitude);
+    }
+
+
+    // Retrieve the current count from localStorage
+    let count = localStorage.getItem('visitorCount');
+
+    // If no count exists in localStorage, initialize it to 0
+    if (count === null) {
+      count = 0;
+    } else {
+      // Convert the count from a string to a number
+      count = parseInt(count);
+    }
+
+    // Increment the count and update the display
+    count++;
+    document.getElementById('visitor-count').textContent = count;
+
+    // Store the updated count in localStorage
+    localStorage.setItem('visitorCount', count.toString());
+  </script>
 
 
   <footer class="footer bg-light mt-4">
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-md-3">
-        <h2 class="my-h2">Thrift Fashion Store</h2>
-        <div class="socialmedia mt-4">
-          <p class="footer-p">Proudly<img src="icons/flag.svg" alt="" class="ml-3"></p>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h2 class="my-h2">Thrift Fashion Store</h2>
+          <div class="socialmedia mt-4">
+            <p class="footer-p">Proudly<img src="icons/flag.svg" alt="" class="ml-3"></p>
+          </div>
+
+          <span class=" cus-link"><a href="#"> Terms and Conditions</a></span>
+        </div>
+        <div class="col-md-2">
+
+          <ul class="text-left">
+            <h3 class="footer-header">COMPANY</h3>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">FAQS</a></li>
+            <li><a href="">Our Mission</a></li>
+            <li><a href="">Feedback</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="text-left">
+            <h3 class="footer-header">MY ACCOUNT</h3>
+            <li><a href="">My Account</a></li>
+            <li><a href="">My cart </a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Wishlist</a></li>
+            <li><a href="">Checkout</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="text-left">
+            <h3 class="footer-header">Shop</h3>
+            <li><a href="">Shoes</a></li>
+            <li><a href="">Clothes </a></li>
+            <li><a href="">Kids</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Brands</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <h3 class="footer-header">
+              CONTACT
+            </h3>
+            <P class="footer-p">
+              rsix.aptech@gmail.com <br>
+              3rd floor, H-medix Gimbiya, <br>
+              Garki Area 11 ,<br>
+              Abuja,Nigeria.
+
+            </P>
+          </ul>
         </div>
 
-        <span class=" cus-link"><a href="#"> Terms and Conditions</a></span>
+        <div class="container mt-2">
+          <center>
+            <p class="footer-p ">
+              Copyright &copy; TechWiz3<span id="year"></span>. All Rights Reserved
+            </p>
+          </center>
+        </div>
+
       </div>
-      <div class="col-md-2">
-
-        <ul class="text-left">
-          <h3 class="footer-header">COMPANY</h3>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">FAQS</a></li>
-          <li><a href="">Our Mission</a></li>
-          <li><a href="">Feedback</a></li>
-
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="text-left">
-          <h3 class="footer-header">MY ACCOUNT</h3>
-          <li><a href="">My Account</a></li>
-          <li><a href="">My cart </a></li>
-          <li><a href="">Login</a></li>
-          <li><a href="">Wishlist</a></li>
-          <li><a href="">Checkout</a></li>
-
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <ul class="text-left">
-          <h3 class="footer-header">Shop</h3>
-          <li><a href="">Shoes</a></li>
-          <li><a href="">Clothes </a></li>
-          <li><a href="">Kids</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Brands</a></li>
-
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <ul>
-          <h3 class="footer-header">
-            CONTACT
-          </h3>
-          <P class="footer-p">
-            rsix.aptech@gmail.com <br>
-            3rd floor, H-medix Gimbiya, <br>
-            Garki Area 11 ,<br>
-            Abuja,Nigeria.
-
-          </P>
-        </ul>
-      </div>
-
-      <div class="container mt-2">
-        <center>
-          <p class="footer-p ">
-            Copyright &copy; TechWiz3<span id="year"></span>. All Rights Reserved
-          </p>
-        </center>
-      </div>
-
     </div>
-  </div>
-</footer>
+  </footer>
 
 
   <!-- Jquery -->
