@@ -7,7 +7,7 @@ angular
     "$routeProvider",
     function ($routeProvider) {
       $routeProvider.when("/view12", {
-        templateUrl: "views/details_view/green_dress/view12.html",
+        templateUrl: "views/details_view/green_shirt/view12.html",
         controller: "View12Ctrl",
       });
     },
