@@ -17,6 +17,8 @@ angular
     "myApp.view11",
     "myApp.view12",
     "myApp.view13",
+    "myApp.view14",
+    "myApp.view15",
     "myApp.version",
   ])
   .config([
