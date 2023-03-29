@@ -307,30 +307,56 @@ textarea{
 }
 
 .box-1{
-	background-image: url('../img/pexels-anj-namoro-2850487.jpg');
+	background-image: url('../PICTURES/blackshirt.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .box-2{
-	background-image: url('../img/pexels-karolina-grabowska-4210854.jpg');
+	background-image: url('../PICTURES/whiteskirt.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .box-3{
-	background-image: url('../img/pexels-karolina-grabowska-4210866.jpg');
+	background-image: url('../PICTURES/pexels-ozan-çulha-11735934.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .box-4{
-	background-image: url('../img/61Qjm6h6ZcL._AC_UL1500_.jpg');
+	background-image: url('../PICTURES/shirts.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+
+.box-5{
+	background-image: url('../PICTURES/shorts.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-6{
+	background-image: url('../PICTURES/trackpants.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-7{
+	background-image: url('../PICTURES/belt-one.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-8{
+	background-image: url('../PICTURES/yellowskirt.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media screen and (max-width:720px){
 	.mr-15{
